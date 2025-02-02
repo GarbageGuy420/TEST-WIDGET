@@ -253,16 +253,6 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"submit","qid":"1","text":"Submit","
                   renderWidget();
                 }
               }, 0);
-		    function() {
-    var result = {}
-    //this part will be used if your field is required. If your widget is required valid
-    //property will be expected before form can be submitted
-    result.valid = true;
-    //this is your field result. You are expected to send value property as string
-    result.value = "my precious data"
-    //most probably you will call sendSubmit method
-    JFCustomWidget.sendSubmit(result)
-}
             </script>
           </div>
         </div>
@@ -287,6 +277,16 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"submit","qid":"1","text":"Submit","
     {
       all_spc[i].value = "33213973252855-33213973252855";
     }
+	   function() {
+    var result = {}
+    //this part will be used if your field is required. If your widget is required valid
+    //property will be expected before form can be submitted
+    result.valid = true;
+    //this is your field result. You are expected to send value property as string
+    result.value = "my precious data"
+    //most probably you will call sendSubmit method
+    JFCustomWidget.sendSubmit(result)
+}
   </script>
 </form></body>
 </html><script type="text/javascript">JotForm.isNewSACL=true;</script>
